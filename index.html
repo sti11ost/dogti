@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf8f4">
+  <meta name="description" content="从心动到认真喜欢，24 个小瞬间，看看恋爱里的你是哪种小狗。">
+  <meta property="og:title" content="恋爱里的你是哪种小狗？">
+  <meta property="og:description" content="24 个心动瞬间，找到那只最像你的小狗。">
+  <title>恋爱里的你是哪种小狗？｜dogti</title>
+  <link rel="stylesheet" href="./style.css?v=2">
+  <script type="module" src="./app.js?v=2"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <button class="brand" id="brandBtn" aria-label="返回首页"><span class="brand-paw">✿</span> dogti<span class="brand-period">.</span></button>
+      <button class="header-link" id="headerGallery">认识小狗们 <span aria-hidden="true">↗</span></button>
+    </header>
+    <main>
+      <section class="view active" id="homeView" aria-labelledby="homeTitle">
+        <div class="home-layout">
+          <div class="home-content">
+            <div class="eyebrow"><span class="mini-heart">♡</span> A LITTLE LOVE QUIZ</div>
+            <h1 id="homeTitle">恋爱里的你<br>是哪种<span class="title-highlight">小狗<span class="title-sparkle">✳</span></span></h1>
+            <p class="home-lede">有人喜欢就会摇尾巴，<br>有人只把柔软的一面留给特别的人。<br>跟着心动走走看，找到最像你的那只小狗。</p>
+            <div class="home-details"><span>24 个小瞬间</span><i></i><span>4 段心动旅程</span><i></i><span>约 3–5 分钟</span></div>
+            <button class="primary-btn" id="startBtn"><span id="startText">和小狗一起出发</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="home-tip">跟着第一反应选就好，没有标准答案。</p>
+          </div>
+          <div class="home-visual" aria-hidden="true"><div class="visual-glow"></div><div class="visual-dog" id="heroDog"></div><span class="float-heart heart-one">♡</span><span class="float-heart heart-two">♡</span><div class="visual-caption"><span>YOU, BUT A LITTLE MORE WOOF.</span><span>01 / 08</span></div></div>
+        </div>
+        <div class="journey-preview" aria-label="测试的四个阶段"><div><span>01</span><b>心动信号</b></div><div><span>02</span><b>靠近一点</b></div><div><span>03</span><b>一点点拉扯</b></div><div><span>04</span><b>认真喜欢</b></div></div>
+      </section>
+      <section class="view" id="quizView" aria-labelledby="questionTitle">
+        <div class="quiz-shell"><div class="quiz-navigation"><button class="quiet-btn" id="quizBack">← 上一题</button><span id="quizCounter">01 / 24</span><button class="quiet-btn quiz-close" id="quizClose" aria-label="暂时退出测试">×</button></div><div class="stage-progress" id="stageProgress" aria-label="测试进度"><span></span><span></span><span></span><span></span></div>
+          <div class="quiz-card"><div class="quiz-dog-wrap"><span class="quiz-dog-shadow"></span><div id="quizDog" aria-hidden="true"></div></div><div class="chapter-label" id="chapterLabel">01 / 心动信号</div><h2 id="questionTitle" tabindex="-1"></h2><p class="question-note" id="questionNote">这一刻，跟着心里的小狗选。</p><div class="options" id="options"></div><p class="quiz-footnote">轻轻点一下就好，小狗会替你记住。</p></div>
+        </div>
+      </section>
+      <section class="view" id="resultView" aria-labelledby="resultName">
+        <div class="result-shell"><div class="result-topline"><span>TO: 恋爱里的你</span><button class="quiet-btn" id="resultHome">回到首页 ↗</button></div><div class="result-cover" id="resultHero"><div class="cover-cloud cloud-one"></div><div class="cover-cloud cloud-two"></div><div id="resultDog" class="result-dog" aria-hidden="true"></div><span class="result-stamp" id="resultId">01 / 08</span></div>
+          <div class="result-intro"><span class="micro-label">THE LITTLE DOG IN YOUR HEART</span><p class="result-kicker">原来，恋爱里的你有一点像</p><h1 id="resultName"></h1><h2 id="resultTitle"></h2><div class="result-tags" id="resultTags"></div><p class="result-summary" id="resultSummary"></p></div>
+          <div class="love-note"><span class="love-note-icon">♡</span><span class="love-note-label">写给喜欢的人的一句话</span><p id="resultNote"></p></div>
+          <div class="result-panels"><article><span class="micro-label">WHEN YOU LOVE</span><h3>相处时的你</h3><p id="resultRelationship"></p></article><article><span class="micro-label">A GENTLE REMINDER</span><h3>也想悄悄告诉你</h3><p id="resultMisunderstood"></p></article></div>
+          <section class="dimensions" aria-labelledby="dimensionsTitle"><span class="micro-label">YOUR LITTLE UNIVERSE</span><h2 id="dimensionsTitle">你的四种心动方式</h2><div id="dimensionRows"></div><p class="dimension-note">每一端都有自己的可爱。这些数字只是帮助你认识自己的偏好。</p></section>
+          <div class="share-area"><div class="share-heart">♡</div><h2>要不要把这只小狗<br>介绍给朋友？</h2><p>分享这张属于你的心动小纸条。</p><button class="primary-btn" id="shareBtn"><span>分享我的小狗</span><span class="button-arrow">↗</span></button><button class="secondary-btn" id="retryBtn">再遇见一只小狗</button><button class="text-btn" id="resultGallery">看看其他小狗们 →</button></div>
+        </div>
+      </section>
+      <section class="view" id="galleryView" aria-labelledby="galleryTitle">
+        <div class="gallery-shell"><div class="gallery-topline"><button class="quiet-btn" id="galleryBack">← 返回</button><span>THE DOGTI CLUB</span></div><div class="gallery-heading"><span class="micro-label">MEET THE LITTLE DOGS</span><h1 id="galleryTitle">总有一只小狗<br>和你很像<span>♡</span></h1><p>八种靠近人的方式，每一种都值得被喜欢。</p></div><div class="gallery-grid" id="galleryGrid"></div><p class="gallery-foot">这是一次轻松的自我探索，不是心理诊断。你也可能在不同日子里，像不同的小狗。</p></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>dogti ♡ 2026</span><span>一份关于喜欢的小小测试 · 仅供娱乐与交流</span></footer>
+  </div>
+  <dialog id="stageDialog" class="stage-dialog" aria-labelledby="stageTitle" aria-describedby="stageDescription"><div class="dialog-inner"><div class="dialog-dog" id="stageDog" aria-hidden="true"></div><span class="micro-label" id="stageEyebrow"></span><h2 id="stageTitle"></h2><p id="stageDescription"></p><div class="stage-mini-progress" id="stageMiniProgress"></div><button class="primary-btn" id="stageNext"><span id="stageNextText">Next · 继续</span><span class="button-arrow">→</span></button></div></dialog>
+  <dialog id="shareDialog" class="share-dialog" aria-labelledby="shareTitle"><div class="share-dialog-inner"><button class="dialog-close" id="shareClose" aria-label="关闭分享窗口">×</button><div class="share-heart">♡</div><h2 id="shareTitle">把你的小狗发给 TA</h2><p id="shareMessage"></p><label for="shareUrl">专属结果链接</label><input id="shareUrl" type="text" readonly><button class="primary-btn" id="copyLink"><span>复制结果链接</span><span class="button-arrow">↗</span></button><small>在微信里也可以点右上角「···」转发当前页面。拿到链接的人能看到这份结果。</small></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
